@@ -1,1 +1,1 @@
-# GROOT-**G**PT-based-**RO**b**OT**
+# GROOT: **G**PT based **RO**b**OT**
