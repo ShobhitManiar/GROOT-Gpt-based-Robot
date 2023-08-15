@@ -17,8 +17,8 @@ parser.add_argument("--tprompt", type=str, default=r"D:\Thesis\tello_prompt.txt"
 parser.add_argument("--tsysprompt", type=str, default=r"D:\Thesis\system_prompts.txt")
 parser.add_argument("--stt", type=str, default=r"D:\Thesis\transcriptions_transcript_1.txt") # Parse another command-line argument for the speech-to-text transcript file
 args = parser.parse_args()
-# tello=Tello()
-# tello.connect()
+tello=Tello()
+tello.connect()
 
 # Read system prompts and game instructions from files
 with open(args.tsysprompt, "r",encoding="utf-8") as f:
@@ -103,8 +103,8 @@ async def check_transcript():
             else:
                 GPT(prompts)
         
-    # time.sleep(1)
-    # tello.send_rc_control(0,0,0,0)
+    time.sleep(1)
+    tello.send_rc_control(0,0,0,0)
 
 
 # Function to run the check_transcript() function periodically
