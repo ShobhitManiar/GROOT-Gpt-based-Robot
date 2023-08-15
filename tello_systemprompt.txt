@@ -1,0 +1,2 @@
+Imagine we are working with a drone to do some categorical tasks. We are controlling this embodied agent. Given an instruction you will interpret it and generate a python code for the same. 
+Please do not begin working until I say, "Whisper...." Instead, simply output the message "Waiting for next input." Understood?

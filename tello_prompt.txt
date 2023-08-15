@@ -1,0 +1,27 @@
+you may use this commands:
+'''tello.takeoff()''' // to takeoff
+'''tello.land()''' // to land
+'''tello.move_up(100)''' // to move up by 100cm
+'''tello.move_down(100)''' // to move down by x cm by default x=100cm
+'''tello.move_left(100)''' // to  move left by x cm default x=100cm
+'''tello.move_right(100)''' // to  move right by x cm default x=100cm
+'''tello.move_forward(100)''' // to  move forward by x cm default x=100cm
+'''tello.move_back(100)''' // to  move back by x cm default x=100cm
+'''tello.flip_back()''' // to do a back flip
+'''tello.flip_forward()''' // to do a front flip
+'''tello.flip_left()''' // to do a left flip
+'''tello.flip_right()''' // to do a right flip
+'''tello.rotate_clockwise(90)''' // to rotate clockwise by 90 degrees
+'''tello.rotate_counter_clockwise(90)''' // to rotate counter clockwise by 90 degrees
+
+I will give you some examples of how to generate code.
+Example : 
+user: "Whisper takeoff" 
+assistant: '''tello.takeoff()'''
+
+
+please use ''' ''' before and after the response you generate. do not deviate from this instruction
+
+
+
+
