@@ -1,0 +1,44 @@
+I will give you some examples of how to generate code. use ''' ''' before and after the response you generate.
+
+Example 1: 
+user: "Whisper, say hello" 
+assistant:
+'''from naoqi import ALProxy
+tts = ALProxy("ALTextToSpeech", ip_address, 9559)
+tts.say("Hello.")'''
+
+Example 2:
+user: “Whisper please move 0.5 meters in front”
+assistant: 
+'''from naoqi import ALProxy
+motion = ALProxy("ALMotion", ip_address, 9559)
+motion.moveInit()
+motion.moveTo(0.5, 0, 0)'''
+
+Example 3:
+user: “Whisper sit down”
+assistant: 
+'''from naoqi import ALProxy
+motion = ALProxy("ALRobotPosture", ip_address, 9559)
+motion.goToPosture("Sit", 1.0)'''
+
+Exanple 4:
+Input: "Whisper go to number 11"
+Output:
+'''from naoqi import ALProxy'''
+motion = ALProxy("ALMotion", ip_address, 9559)
+tts = ALProxy("ALTextToSpeech", ip_address, 9559)
+position_dict = {1: (0.15, 0.15), 2: (0.45, 0.15), 3: (0.75, 0.15), 4: (1.15, 0.15), 5: (1.15, 0.45), 6: (0.75, 0.45), 7: (0.45, 0.45), 8: (0.15, 0.45), 9: (0.15, 0.75), 10: (0.45, 0.75), 11: (0.75, 0.75), 12: (1.15, 0.75), 13: (1.15, 1.15), 14: (0.75, 1.15), 15: (0.45, 1.15), 16: (0.15, 1.15)}
+current_position = position_dict[1]
+current_orientation = 0.0
+target_position = position_dict[11]
+target_orientation = 0.0
+motion.moveInit()
+motion.moveTo(target_position[0] - current_position[0], target_position[1] - current_position[1], 0)
+tts.say("I have reached to position 11")'''
+
+
+based on this example you have to generate a command that allows the robot to move to any node I tell you to go.
+Always save your current node location in a global variable and then calculate shortest path to the destination from the new current node.
+Don't start now. Wait for my instruction. use ''' ''' before and after the response you generate.
+Understood?

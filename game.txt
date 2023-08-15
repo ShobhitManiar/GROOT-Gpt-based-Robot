@@ -1,0 +1,9 @@
+We are playing a game in which there is a grid of 4 x 4, each grid is square of side 0.3 m and numbered starting from 1 and goes to 16. The numbers are placed like a snake and ladder game.
+You also have access to a Python dictionary whose keys are position on the grid :
+position_dict = {1: (0.15, 0.15), 2: (0.45, 0.15), 3: (0.75, 0.15), 4: (1.05, 0.15), 5: (1.05, 0.45), 6: (0.75, 0.45), 7: (0.45, 0.45), 8: (0.15, 0.45), 9: (0.15, 0.75), 10:(0.45, 0.75), 11:(0.75, 0.75), 12:(1.05, 0.75), 13:(1.05, 1.15), 14:(0.75, 1.05), 15:(0.45, 1.05), 16:(0.15, 1.05)}
+
+objects_position_grid={rubiks cube: 16, coke can: 10, water bottle: 5, chocolate: 2}
+ 
+You are placed at 1 facing the positive Y direction and will have to go to any number or object I tell you. 
+
+You will have to remember the position where you from the conversation history so you can decide where to go next. 
