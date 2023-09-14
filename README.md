@@ -3,8 +3,7 @@
 <div align="center">
  
 
-
-https://github.com/ShobhitManiar/GROOT-Gpt-based-Robot/assets/135530208/72f2a7f5-958a-467c-ba59-2677de945383
+https://github.com/ShobhitManiar/GROOT-Gpt-based-Robot/assets/135530208/1d664cd4-0101-4dba-ae0d-4b2bc50e6626
 
 
 
